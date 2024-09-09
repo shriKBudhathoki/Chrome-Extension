@@ -1,0 +1,138 @@
+<html>
+
+<head>
+    <title>New</title>
+</head>
+
+<body>
+
+    <input type="text" name="" id="Text-box">
+    <button id="New">SAVE INPUT</button>
+    <button id="tab-el">SAVE TABS</button>
+    <button id="Del">DELETE ALL</button>
+    <ul id="ul-el"></ul>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 10px;
+            font-family: Arial;
+            min-width: 400px;
+            /*it is for make a maximum size of the display item of the html like save-btn ad input-btn*/
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 4px;
+            /* gap between input and save btn*/
+            width: 100%;
+            box-sizing: border-box;
+            /* Minimize the extra quantity of box*/
+            border: 1px solid #5f9341;
+            /*Border Outline colour is green*/
+        }
+
+        button {
+            padding: 10px 20px;
+            /*10px for Y-axis and X-axis is yor right and left */
+            color: white;
+            background: #5f9341;
+            border: 1px solid #5f9341;
+            font-weight: bold;
+
+        }
+
+        #Del {
+            padding: 10px 20px;
+            /*10px for Y-axis and X-axis is yor right and left */
+            color: #5f9341;
+            background-color: white;
+
+
+        }
+
+        li {
+            margin-top: 20px;
+            ;
+
+        }
+
+        li a {
+
+            color: #5f9341;
+            text-decoration: none; /* Remove the underlines from a href
+            */
+        }
+
+
+        ul {
+
+            list-style: none;
+            /* Remove the bullete*/
+            padding-left: 0;
+
+        }
+    </style>
+    <!-- <script> 
+//Rough 
+
+
+
+
+let MyLeads=[]
+const MyText=document.getElementById("Text-box") 
+const NM=document.getElementById("New")
+let ulel=document.getElementById("ul-el")   
+
+
+NM.addEventListener("click",function(){
+              //Push the mylead array 
+MyLeads.push(MyText.value) //it give the html type value  to our javascript by .value
+MyText.value=" " // it's for remove the search box msg or text 
+renderfunction()
+              //Push the value from input field
+})
+// 1. Create a variable,listItems which hold all the HTML for the list items 
+// Assign it to an empty string to begin with 
+
+function renderfunction()
+{
+let listItems= " "
+for (let i=0;i<MyLeads.length;i++)
+{
+// 2. Add the items listitems variable instead of the ulel.innerHTML
+    
+// listItems+= "<li><a target='_blank' href='"+MyLeads[i]+ "'>"+MyLeads[i]+"</a></li>" First Method with ancor tag 
+
+
+    //temple string 
+listItems +=`
+        <li>
+            <a target='_blank' href='${MyLeads[i]}'>${MyLeads[i]}</a>
+        </li>
+    `; // Third Method and MAke a new tab by using the target='_blank '
+
+
+    
+    console.log(listItems)
+// listItems+= "<li>"+MyLeads[i]+"</li>" Second  Method with ancor tag 
+
+}
+// 3. Render the ListItems inside the unordered list usiing ulEl.innerHTML
+ulel.innerHTML=listItems
+}
+//create the render function 
+
+// clear the input field 
+// Adding <a> tag 
+
+
+
+</script> -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
